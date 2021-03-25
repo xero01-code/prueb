@@ -1,0 +1,271 @@
+body{
+    margin:0;
+    padding:0;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200;
+    margin:auto;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lista{
+    display: flex;
+}
+li{
+    margin-right: 30px;
+    list-style: none;
+    
+    font-size: 20px;
+   
+    
+}
+
+a{
+    text-decoration: none;
+    color:black;
+
+}
+.flex-text a:hover,.boton a:hover,.contenedor-frase a:hover{
+    background: #C5B4B4;
+    color:#fff;
+    transition: 0.4s;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+/*la imagen de fondo*/
+#encabezado{
+    background: url(../imagenes/FONDO-crema.jpg);
+    background-size: cover;
+    padding:100px 0;
+    
+}
+/*contenedor del texto*/
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+/*texto*/
+.flex-text{
+    
+    margin-left: 20px;
+}
+/*darles propidades al h1: que dice Good Things Comes In Small Packages*/
+.flex-text h1{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 70px;
+    padding-left:30px;
+}
+/*darle propiedades de a que dice:SEE JEWELERY*/
+.flex-text a{
+    text-decoration: none;
+    margin-left:30px;
+    border:3px solid gray;
+    padding:15px 10px;
+}
+.flex-img{
+    margin-left: 30px;
+    
+}
+.flex-img img{
+    width: 95%;
+}
+/*el texto de h1, las propiedades*/
+.contenedor h2{
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+/*contenedor con flex-box*/
+.contenedor-ejemplo{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+    
+}
+.ejemplo-imagen{
+    width: 25%;
+    padding: 50px 38px 50px 38px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.ejemplo-imagen img{
+    width: 100%;
+    padding-left:0;  
+}
+.ejemplo-imagen h3{
+    text-align: center;
+}
+.ejemplo-imagen p{
+    
+    text-align: justify;
+    padding-left:40px;
+}
+.boton{
+    margin-top: -18px;
+    margin-left:40em;
+    margin-bottom: 3em;
+    
+    
+}
+.boton a{
+    
+    border: 3px solid gray;
+    text-decoration: none;
+    padding:15px 20px;
+    
+}
+
+/**/
+.nose h1{
+    text-align: center;
+    margin-bottom:30px;
+}
+.contenedor-imagen {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.contenedor-imagen img{
+    width: 40%;
+}
+.contenedor-frase{
+    
+    width: 42%;
+}
+.contenedor-frase h1{
+    font-size: 30px;
+    
+    padding-top:12px;
+   
+}
+.contenedor-frase p{
+    
+    margin-top:50px;
+    padding-top:40px;
+    padding-bottom:1em;
+}
+.contenedor-frase a{
+    text-decoration:none;
+    padding: 15px 20px;
+    border: 3px solid gray;
+    padding-left: 30px;
+    margin-left:50px;
+    
+}
+.menu-icon{
+    display: none;
+}
+
+/*Responsive*/
+@media(max-width:480px){
+    nav{
+        position:absolute;
+        top:80px;
+        left:0;
+        background: #C5B4B4;
+        width: 100%;
+        display: none;
+        opacity: 0.5;
+    }
+    nav .lista{
+        flex-direction: column;
+        display:flex;
+    }
+    .lista a{
+       color:black;
+       font-size: 23px;
+       padding-bottom: 20px;
+    }
+    .menu-icon{
+        display:block;
+        width: 25px;
+    }
+    #encabezado{
+        padding:0px;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .flex-text h1{
+        margin-bottom: 30px;
+    }
+    .flex-img{
+        margin-top:40px;
+        margin-bottom: 20px;
+    }
+    .flex-img img{
+        width:104%;
+        margin-left:-20px;
+    }
+    /*Segunda seccion*/
+    .contenedor h2{
+        margin-top: 30px;
+        margin-bottom: 26px;
+    }
+    .contenedor-ejemplo{
+        display: flex;
+        flex-direction: column;
+    }
+    .ejemplo-imagen p{
+        font-size: 1.6em;
+        padding: 5px 1px 4px 0px;
+        margin-bottom: -3em;
+    }
+    /*contenedor de imagenes*/
+    .ejemplo-imagen{
+        width: 75%;
+    }
+    .ejemplo-imagen img{
+        padding:0;
+        width: 100%;
+        margin-top:-22px;
+    }
+    .ejemplo-imagen h3{
+        font-size: 1.7em;
+    }
+    .boton{
+        margin-left: 8em;
+        margin-bottom: 4.5em;
+        margin-top:2em;
+    }
+    .boton a{
+        padding:15px 16px;
+    }
+    .contenedor-imagen{
+        display:flex;
+        flex-direction: column;
+    }
+    .contenedor-imagen img{
+        width: 90%;
+        margin-left: 1em;
+        margin-bottom: 2.5em;
+    }
+    .contenedor-frase{
+        width: 100%;
+        margin-left: 0em;
+    }
+    .contenedor-frase h1{
+        font-size:1.4em;
+        padding-left:0.4em;
+        padding-top:1em;
+    }
+    .contenedor-frase p{
+        margin-top:0.2em;
+        font-size: 1.7em;
+        
+    }
+    .contenedor-frase a{
+        padding: 15px 16px;
+    }
+}
